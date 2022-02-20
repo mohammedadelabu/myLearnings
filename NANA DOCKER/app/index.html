@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nana Docker App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class='container'>
+        <h1 id="header">User profile</h1>
+        <img src='./images/profile-1.jpg' alt="user-profile">
+        <span>Name: </span><h3 id='name'>Anna Smith</h3>
+        <hr />
+        <span>Email: </span><h3 id='email'>anna.smith@example.com</h3>
+        <hr />
+        <span>Interests: </span><h3 id='interests'>coding</h3>
+        <hr />
+        <button class='button' onclick="editProfile()">Edit Profile</button>
+    </div>
+    <div class='container-edit'>
+        <h1 id="header">User profile</h1>
+        <img src='./images/profile-2.jpg' alt="user-profile">
+        Name: <input id='input-name' type='text' />
+        <hr />
+        Email: <input id='input-email' type='email'>
+        <hr />
+        Interests: <input id='input-interests' type='text'>
+        <hr />
+    
+        <button class='button' onclick="saveProfile()">Save Profile</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
